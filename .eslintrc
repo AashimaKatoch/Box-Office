@@ -4,8 +4,20 @@
     "env": {
       "browser": true
     },
+
     "parser": "@babel/eslint-parser",
-    "requireConfigFile": false,
+
+    "parserOptions": {
+      "requireConfigFile": false,
+      "babelOptions": {
+        "presets": ["@babel/preset-react"]
+      
+    }
+
+  },
+
+ 
+
     "rules": {
       "no-plusplus": [0],
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
